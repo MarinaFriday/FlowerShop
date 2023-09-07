@@ -1,0 +1,9 @@
+09/07/2023 12:33:36 Приложение запущено
+09/07/2023 12:33:44 HTTP "GET" "/swagger/index.html" responded 200 in 1859.8960 ms
+09/07/2023 12:33:45 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 598.7799 ms
+09/07/2023 12:33:47 No store type was specified for the decimal property '"Cost"' on entity type '"Shipment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+09/07/2023 12:33:47 No store type was specified for the decimal property '"Cost"' on entity type '"Sale"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+09/07/2023 12:33:48 Вы вызвали контроллер WeatherForecastController
+09/07/2023 12:33:48 HTTP "GET" "/weatherforecast" responded 200 in 2802.4022 ms
+09/07/2023 12:33:48 Вы вызвали контроллер WeatherForecastController
+09/07/2023 12:33:48 HTTP "GET" "/weatherforecast" responded 200 in 295.6777 ms

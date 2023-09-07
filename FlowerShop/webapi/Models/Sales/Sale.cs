@@ -8,7 +8,7 @@ namespace webapi.Models.Sales
         public int Id { get; set; }
         public decimal Cost { get; set; }
         public int CategoryId { get; set; }
-        public CategorySale CategorySale { get; set; }
+        public Category Category { get; set; }
         public int FlowerId { get; set; }
         public Flower Flower { get; set; }
     }
