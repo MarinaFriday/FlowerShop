@@ -1,11 +1,10 @@
 ﻿namespace webapi.Models.Flowers
 {
-    public class Image
+    public class FlowersShipments
     {
-        public int Id { get; set; }
-        public string ImagePath { get; set; }
         public int FlowerId { get; set; }
+        public int ShipmentId { get; set; }
         public Flower Flower { get; set; }
-
+        public Shipment Shipment { get; set; }
     }
 }

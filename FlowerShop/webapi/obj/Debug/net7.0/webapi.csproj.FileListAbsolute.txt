@@ -77,3 +77,5 @@ C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\Serilog.Se
 C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\Serilog.Sinks.Console.dll
 C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\webapi.staticwebassets.runtime.json
+C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\webapi\bin\Debug\net7.0\Logs\log.json

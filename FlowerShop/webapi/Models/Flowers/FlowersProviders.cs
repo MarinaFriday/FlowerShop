@@ -1,6 +1,6 @@
 ﻿namespace webapi.Models.Flowers
 {
-    public class FlowerProvider
+    public class FlowersProviders
     {
         public int FlowerId { get; set; }
         public int ProviderId { get; set; }
