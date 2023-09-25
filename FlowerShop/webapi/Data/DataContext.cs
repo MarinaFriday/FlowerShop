@@ -9,9 +9,10 @@ namespace webapi.Data
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) {
+            //удалит базу данных если существует
+            //Database.EnsureDeleted();
             //создается бд если не создана
-            Database.EnsureCreated();
-            
+            Database.EnsureCreated();            
         }
 
         public DbSet<Models.Expanses.Category> ExpansesCategories { get; set; }
@@ -43,7 +44,7 @@ namespace webapi.Data
                 //по какому внешнему ключу связывать сущности
                 .HasForeignKey(f=>f.CategoryId);
             //многие цветы к одному цвету
-            modelBuilder.Entity<Models.Flowers.Flower>()
+           modelBuilder.Entity<Models.Flowers.Flower>()
                 .HasOne(f => f.Color)
                 .WithMany(c => c.Flowers)
                 .HasForeignKey(f => f.ColorId);

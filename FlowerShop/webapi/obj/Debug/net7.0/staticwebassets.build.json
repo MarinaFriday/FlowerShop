@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nm8Dw9liSpv/M5fF/EP7HsAzWThTWcENJ/JPvLoPdOk=",
+  "Hash": "+MplT6tbOj0YNmxr/h/LeoF8irv++Ux9cVaK+dEb+eQ=",
   "Source": "webapi",
   "BasePath": "_content/webapi",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\marin\\OneDrive\\Desktop\\FS\\FlowerShop\\webapi\\wwwroot\\images\\mondial.jpg",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marin\\OneDrive\\Desktop\\FS\\FlowerShop\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/mondial.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mondial.jpg"
+    }
+  ]
 }
