@@ -17,7 +17,7 @@ namespace webapi.Data
 
         public DbSet<Models.Expanses.Category> ExpansesCategories { get; set; }
         public DbSet<Expanse> Expanses { get; set; }
-        public DbSet<Models.Flowers.Category> FlowersCategories {get; set;}
+        public DbSet<FlowerCategory> FlowersCategories {get; set;}
         public DbSet<Color> Colors { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Flower> Flowers { get; set; }

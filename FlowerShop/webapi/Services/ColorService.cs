@@ -8,7 +8,7 @@ namespace webapi.Services
 {
     public class ColorService
     {
-        private DataContext _context;
+        private readonly DataContext _context;
 
         public ColorService(DataContext context)
         {
@@ -28,16 +28,27 @@ namespace webapi.Services
             return await _context.Colors.ToListAsync();
         }
         //получение цвета по id
+        public async Task<Color> GetColor(int id) {
+            var color = _context.Colors.FindAsync(id);
+            return await color;
+        }
+
 
         //удаление цвета
-        public Color DeleteColor(int id) {
+        public  Color DeleteColor(int id) {
             var color = _context.Colors.Find(id);
             if (color == null) return null;
             _context.Colors.Remove(color);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
             return color;        
         }
         //редактирование цвета 
+        public Color UpdateColor(int id, Color color) { 
+            _context.Entry(color).State = EntityState.Modified;
+            _context.SaveChanges(); 
+            return color;   
+        }
+
         //
     }
 }

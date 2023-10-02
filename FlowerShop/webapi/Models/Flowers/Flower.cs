@@ -14,7 +14,7 @@ namespace webapi.Models.Flowers
         public int ColorId { get; set; }
         public Color Color { get; set; } 
         public int CategoryId { get; set; } 
-        public Category Category { get; set; } 
+        public FlowerCategory Category { get; set; } 
         public int CountryId { get; set; }
         public Country Country { get; set; }
         public ICollection<FlowersProviders> FlowersProviders { get; set; }  

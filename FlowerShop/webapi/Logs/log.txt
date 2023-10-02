@@ -602,3 +602,85 @@ Error Number:1801,State:3,Class:16
 09/24/2023 19:46:34 HTTP "GET" "/api/Color" responded 200 in 47.3771 ms
 09/24/2023 19:46:51 HTTP "POST" "/api/Color" responded 200 in 282.9591 ms
 09/24/2023 19:47:04 HTTP "GET" "/api/Color" responded 200 in 61.6219 ms
+10/02/2023 20:07:17 Приложение запущено
+10/02/2023 20:07:24 HTTP "GET" "/swagger/index.html" responded 200 in 1120.3298 ms
+10/02/2023 20:07:24 HTTP "GET" "/swagger/swagger-ui.css" responded 304 in 48.7875 ms
+10/02/2023 20:07:24 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 304 in 43.4537 ms
+10/02/2023 20:07:24 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 304 in 52.7949 ms
+10/02/2023 20:07:25 HTTP "GET" "/swagger/favicon-32x32.png" responded 304 in 0.5087 ms
+10/02/2023 20:07:25 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 499.0461 ms
+10/02/2023 20:18:53 No store type was specified for the decimal property '"Cost"' on entity type '"Shipment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 20:18:53 No store type was specified for the decimal property '"Cost"' on entity type '"Sale"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 20:18:57 HTTP "GET" "/api/Color" responded 200 in 6097.7903 ms
+10/02/2023 20:19:14 HTTP "GET" "/api/Color/1" responded 200 in 406.2259 ms
+10/02/2023 20:19:28 HTTP "DELETE" "/api/Color/1" responded 200 in 701.4606 ms
+10/02/2023 20:19:44 HTTP "DELETE" "/api/Color/1" responded 204 in 61.1475 ms
+10/02/2023 20:19:56 HTTP "GET" "/api/Color" responded 200 in 15.9485 ms
+10/02/2023 21:01:56 Приложение запущено
+10/02/2023 21:02:03 HTTP "GET" "/swagger/index.html" responded 200 in 849.4737 ms
+10/02/2023 21:02:06 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 825.5076 ms
+10/02/2023 21:02:14 No store type was specified for the decimal property '"Cost"' on entity type '"Shipment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 21:02:14 No store type was specified for the decimal property '"Cost"' on entity type '"Sale"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 21:02:18 Вы вызвали контроллер WeatherForecastController
+10/02/2023 21:02:18 HTTP "GET" "/weatherforecast" responded 200 in 7385.9034 ms
+10/02/2023 21:02:19 Вы вызвали контроллер WeatherForecastController
+10/02/2023 21:02:19 HTTP "GET" "/weatherforecast" responded 200 in 333.8549 ms
+10/02/2023 21:02:19 HTTP "GET" "/api/controller" responded 200 in 3279.6694 ms
+10/02/2023 21:05:12 HTTP "POST" "/api/Color" responded 200 in 795.5327 ms
+10/02/2023 21:05:45 HTTP "POST" "/api/controller" responded 500 in 369.2959 ms
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/02/2023 21:05:46 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.CreatedAtActionResult.OnFormatting(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/02/2023 21:11:30 Приложение запущено
+10/02/2023 21:11:37 HTTP "GET" "/swagger/index.html" responded 200 in 912.7455 ms
+10/02/2023 21:11:38 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 697.7204 ms
+10/02/2023 21:11:44 No store type was specified for the decimal property '"Cost"' on entity type '"Shipment"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 21:11:44 No store type was specified for the decimal property '"Cost"' on entity type '"Sale"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+10/02/2023 21:11:46 Вы вызвали контроллер WeatherForecastController
+10/02/2023 21:11:46 HTTP "GET" "/weatherforecast" responded 200 in 5137.8222 ms
+10/02/2023 21:11:46 Вы вызвали контроллер WeatherForecastController
+10/02/2023 21:11:46 HTTP "GET" "/weatherforecast" responded 200 in 99.2174 ms
+10/02/2023 21:12:09 HTTP "POST" "/api/controller" responded 200 in 1057.1599 ms
+10/02/2023 21:12:41 HTTP "POST" "/api/controller" responded 200 in 94.4556 ms
+10/02/2023 21:12:51 HTTP "GET" "/api/controller" responded 200 in 669.7455 ms
+10/02/2023 21:13:15 HTTP "DELETE" "/api/controller/2" responded 204 in 400.4557 ms
+10/02/2023 21:13:19 HTTP "DELETE" "/api/controller/2" responded 404 in 108.6134 ms
+10/02/2023 21:13:30 HTTP "GET" "/api/controller" responded 200 in 10.0284 ms
