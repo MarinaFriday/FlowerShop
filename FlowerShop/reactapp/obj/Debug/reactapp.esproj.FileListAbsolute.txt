@@ -1,2 +1,0 @@
-C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
-C:\Users\marin\OneDrive\Desktop\FS\FlowerShop\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache

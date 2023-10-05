@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "OYM16hjTW1q0LEYbOr4vjzEDu/E3wBbys+HGsTbghCo=",
+  "Source": "webapi",
+  "BasePath": "_content/webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "webapi\\wwwroot",
+      "Source": "webapi",
+      "ContentRoot": "D:\\koko\\FS\\FlowerShop\\FlowerShop\\FlowerShop\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\koko\\FS\\FlowerShop\\FlowerShop\\FlowerShop\\webapi\\wwwroot\\images\\mondial.jpg",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\koko\\FS\\FlowerShop\\FlowerShop\\FlowerShop\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/mondial.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mondial.jpg"
+    }
+  ]
+}
