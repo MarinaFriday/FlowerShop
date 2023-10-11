@@ -14,17 +14,19 @@ namespace webapi.Controllers
         public ProviderController(DataContext context) {
             _context = context;
         }
-
+        //GET 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Provider>>> GetProviders() {
             return await _context.Providers.ToListAsync();
         }
+        //GET {id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Provider>> GetProvider(int id) {
             var provider = await _context.Providers.FindAsync(id);
             if (provider == null) NotFound();
             return provider;
         }
+        //PUT {id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProvider(int id, Provider provider) {
             if (id != provider.Id) BadRequest();

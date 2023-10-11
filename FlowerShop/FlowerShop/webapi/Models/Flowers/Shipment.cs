@@ -7,6 +7,6 @@
         public DateTime Date { get; set; }
         public int ProviderId { get; set; }
         public Provider Provider { get; set; }
-        public ICollection<FlowersShipments> FlowersShipments { get; set; }
+        public ICollection<FlowersShipments>? FlowersShipments { get; set; }
     }
 }

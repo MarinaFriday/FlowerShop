@@ -1010,3 +1010,34 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instanc
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:-1,State:0,Class:20
+10/08/2023 15:31:33 Приложение запущено
+10/08/2023 15:31:35 HTTP "GET" "/swagger" responded 301 in 69.1136 ms
+10/08/2023 15:31:36 HTTP "GET" "/swagger/index.html" responded 200 in 831.7451 ms
+10/08/2023 15:31:36 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 31.6818 ms
+10/08/2023 15:31:36 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 27.4786 ms
+10/08/2023 15:31:36 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 80.3549 ms
+10/08/2023 15:31:37 HTTP "GET" "/swagger/favicon-32x32.png" responded 200 in 0.1919 ms
+10/08/2023 15:31:38 HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 468.2105 ms
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - webapi.Controllers.ShipmentController.PostShipment (webapi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+10/08/2023 15:31:38 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - webapi.Controllers.ShipmentController.PostShipment (webapi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+10/08/2023 15:32:41 Приложение запущено
+10/08/2023 15:32:44 HTTP "GET" "/swagger/index.html" responded 200 in 592.7857 ms
+10/08/2023 15:32:46 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 449.1552 ms
+10/08/2023 18:58:38 Приложение запущено
+10/08/2023 18:58:40 HTTP "GET" "/swagger/index.html" responded 200 in 700.8788 ms
+10/08/2023 18:58:42 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 418.4127 ms

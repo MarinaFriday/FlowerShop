@@ -8,11 +8,11 @@ namespace webapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ColorController : ControllerBase
+    public class ColorsController : ControllerBase
     {
         private readonly DataContext _context;
 
-        public ColorController(DataContext context) {
+        public ColorsController(DataContext context) {
             _context = context;
         }
 
@@ -38,6 +38,8 @@ namespace webapi.Controllers
             if (color == null) NotFound();
             return  color;
         }
+        //PUT {id}
+
         //DELETE {id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteColor(int id) {

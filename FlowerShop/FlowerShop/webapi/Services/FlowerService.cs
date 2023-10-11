@@ -14,24 +14,40 @@ namespace webapi.Services
         public FlowerService(DataContext context) {
             _context=context;
         }
-
-        /*public Flower AddFlower(Flower flower) {
-
-            return flower;
-        }*/
-        public Flower AddFlower(Flower flower) 
+        //Добавление цветка
+        public async Task<ActionResult<Flower>> AddFlower(Flower flower) 
         { 
             flower.Title = flower.Title.Trim();
-            _context.Flowers.Add(flower);   
-            _context.SaveChanges();
+            await _context.Flowers.AddAsync(flower);   
+            await _context.SaveChangesAsync();
             return flower;
         }
-        //
+        //Получение списка цветов
         public async Task<ActionResult<IEnumerable<Flower>>> ListFlowers() 
         { 
 
         return await _context.Flowers.ToListAsync();
 
+        }
+        //Получение цветка по id
+        public async Task<ActionResult<Flower>> GetFlower(int id) {
+            var flower = await _context.Flowers.FindAsync(id);
+            if (id != flower.Id) return null;
+            return flower;  
+        }
+        //Обновление цветка 
+        public async Task<Flower> UpdateFlower(int id, Flower flower) { 
+            _context.Entry(flower).State = EntityState.Modified; 
+            await _context.SaveChangesAsync();  
+            return flower;  
+        }
+        //Удаление цветка
+        public Flower DeleteFlower(int id) {
+            var flower =  _context.Flowers.Find(id);
+            if (flower == null) return null;
+            _context.Flowers.Remove(flower);
+            _context.SaveChanges();
+            return flower;
         }
 
         

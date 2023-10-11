@@ -7,10 +7,10 @@ namespace webapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FlowerCategoryController : ControllerBase
+    public class FlowerCategoriesController : ControllerBase
     {
         private readonly DataContext _context;
-        public FlowerCategoryController(DataContext context) {
+        public FlowerCategoriesController(DataContext context) {
             _context = context;
         }
 
